@@ -1,6 +1,8 @@
 class UserManager:
     def __init__(self):
-        self.users=[]
+        self.users = []
+
+
     def add_user(self,username):
         if not username :
             raise ValueError("le nom de user est obligatoire")
@@ -8,13 +10,18 @@ class UserManager:
             raise ValueError("user deja existant")
         self.users.append(username)
 
+
     def remove_user(self,username):
         if username not in self.users:
             raise ValueError("user introuvable")
         self.users.remove(username)
+
+
     def count_users(self):
         return len(self.users)
     
+
     def count_total_users(users):
         return len(users)
+    
     
