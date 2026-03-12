@@ -17,6 +17,9 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: "3.11"
+    - name: Installer les dépendances
+      run: 
+          pip install flake8
     - name: installer les dependences
       run: pip install -r requirements.txt
     - name: lint
