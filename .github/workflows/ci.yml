@@ -1,5 +1,5 @@
 name:pipeline simple
-on:
+on :
   push:
     branches: [main ]
   pull-request :
