@@ -47,6 +47,8 @@ jobs:
      - name: Générer le package
        run:
           python -m build
+     -  name: installer les dependences
+        run: pip install -r requirements.txt
      - name: Upload artifact
        uses: actions/upload-artifact@v6
 
