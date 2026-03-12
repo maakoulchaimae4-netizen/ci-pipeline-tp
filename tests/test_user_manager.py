@@ -1,4 +1,6 @@
 import pytest
+
+
 from app.user_manager import UserManager
 
 
@@ -26,4 +28,3 @@ def test_remove_nonexistent_user():
     manager = UserManager()
     with pytest.raises(ValueError):
         manager.remove_user("Saad")
-        
