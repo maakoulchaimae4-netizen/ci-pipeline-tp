@@ -38,7 +38,7 @@ jobs:
       - name: installer les dependences
         run: pip install -r requirements.txt
       - name: executer pytest
-        run: pytest tests/ -v --cov=src
+        run: python -m pytest tests/ -v --cov=app
 
   build:
     runs-on: ubuntu-latest
@@ -48,7 +48,7 @@ jobs:
        run:
           python -m build
      - name: Upload artifact
-       uses: actions/upload-artifact@v3
+       uses: actions/upload-artifact@v6
 
     
 
